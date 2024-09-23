@@ -1,0 +1,16 @@
+const prompt = require("prompt-sync")()
+const peso = Number(prompt("Insira o peso do pacote: "))
+const entrega = prompt("Informe o tipo de entrega: ")
+let taxaPeso
+switch (entrega){
+case "padrao":
+    taxaPeso = peso * 5
+    break
+case "expresso":
+    taxaPeso = peso * 15
+    break
+case "internacional":
+    taxaPeso = peso * 25
+    break
+}
+console.log (`${taxaPeso.toFixed(2)}`)
