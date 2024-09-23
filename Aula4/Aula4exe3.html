@@ -1,0 +1,21 @@
+<script>
+    const ht = Number (prompt("Horas trabalhadas mês: "))
+    const vh = Number (prompt("Valor hora trabalhada: "))
+    const pd = Number (15/100)
+    const sb = (ht * vh)
+    const td = pd * sb
+    const sl = sb - td //até aqui funcionando
+    alert (`Horas trabalhadas: ${ht} horas, salário bruto: ${sb.toFixed(2)} R$, total de desconto:  ${td.toFixed(2)} R$, e salário liquido:  ${sl.toFixed(2)} R$`)
+/*- Faça um algoritmo que, obtenha o valor para a variável
+ht (horas trabalhadas no mês), obtenha o valor para a
+variável vh (valor hora trabalhada), Utilize a variável PD
+(percentual de desconto), com o valor de 10%. Com isso
+calcule o salário bruto => SB = HT * VH, o total de desconto
+=> TD = (PD/100)*SB e o salário líquido => SL = SB – TD.
+● Entrada:
+○ Horas trabalhadas mês: 20
+○ Valor hora trabalhada: 20
+● Saída:
+○ Horas trabalhadas: ht 20hr, sb salário bruto R$ 400.00, td desconto R$
+60,00 e sl salário liquido R$ 340.00*/
+</script>
