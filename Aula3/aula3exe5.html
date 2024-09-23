@@ -1,0 +1,13 @@
+<script>
+    const cigarrodia = Number(prompt("Quantos cigarros ao dia?: "))
+    const anos = Number(prompt("Fumou por quantos anos?: "))
+    const diamin = 10
+    const minperd = cigarrodia * diamin
+    const ano = 365
+    const horas = 24
+    const min = 60
+    const cigarrofum = minperd * ano
+    const tempoperdido = cigarrofum * anos / horas / min
+    console.log(`Como fumante você perdeu: ${tempoperdido.toFixed()} dias de vida!`)
+    alert(`Como fumante você perdeu: ${tempoperdido.toFixed()} dias de vida!`)
+</script>
