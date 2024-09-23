@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    //entramos com o valor da janta.
+     const janta = Number(prompt("Entre com o valor da janta:"))
+     //calculamos o valor da taxa, lembrando que a porcentagem é o valor sobre 100.
+     //15/100 = 0.15
+    const taxa = 15 //15%/100
+    // calculo a taxa do garçom
+    //valor da janta * taxa
+    const garcom = janta * (taxa/100)
+    //aqui calculou o total da janta
+    //usamos o valor da janta + o calculo do garçom(taxa)
+    const total = janta + garcom
+    //mostramos os valores em tela
+    alert("Taxa do garçom: " + garcom)
+    alert("Total a pagar: " + total)
+</script>
